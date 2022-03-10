@@ -13,5 +13,7 @@ jobs:
                 with:
                     java-version: '11'
                     distribution: 'adopt'
-            -   name: Check sbt version
-                run: sbt --version
+            -   name: Build and test
+                shell: bash
+                    run: |
+                        sbt -v "scalafmtCheckAll; +test;"
