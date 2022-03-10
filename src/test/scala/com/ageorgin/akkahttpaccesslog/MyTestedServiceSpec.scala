@@ -8,7 +8,7 @@ class MyTestedServiceSpec extends AnyWordSpec with Matchers {
     "extract first block in a string" in {
       val myTestedService = new MyTestedService
 
-      myTestedService.extractFirstBlock("AAAA_BBBB") should equal("BLABLA")
+      myTestedService.extractFirstBlock("AAAA_BBBB") should equal("AAAA")
     }
   }
 }
