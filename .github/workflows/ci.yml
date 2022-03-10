@@ -15,5 +15,5 @@ jobs:
                     distribution: 'adopt'
             -   name: Build and test
                 shell: bash
-                    run: |
-                        sbt -v "scalafmtCheckAll; +test;"
+                run: |
+                    sbt -v "scalafmtCheckAll; +test;"
